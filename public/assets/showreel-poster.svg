@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs><radialGradient id="g" cx="70%" cy="40%"><stop stop-color="#ff694f"/><stop offset=".4" stop-color="#701d25"/><stop offset="1" stop-color="#0b0a0d"/></radialGradient><filter id="n"><feTurbulence baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 .14 0"/></filter></defs>
+  <rect width="1600" height="900" fill="url(#g)"/><rect width="1600" height="900" filter="url(#n)" opacity=".35"/>
+  <circle cx="1070" cy="450" r="270" fill="none" stroke="#ffb49e" stroke-width="2" opacity=".6"/><circle cx="1070" cy="450" r="185" fill="none" stroke="#ffb49e" stroke-width="2" opacity=".5"/>
+  <path d="M930 220 1280 450 930 680Z" fill="#ff4d2e" opacity=".78"/>
+  <text x="100" y="170" fill="#fff" font-family="Arial" font-weight="700" font-size="35" letter-spacing="8">IAN JAVIER / 2026</text>
+  <text x="100" y="690" fill="#fff" font-family="Arial" font-weight="800" font-size="150">SHOWREEL</text>
+  <text x="108" y="760" fill="#ff927d" font-family="Arial" font-size="32" letter-spacing="12">CUT · COLOR · MOTION</text>
+</svg>
