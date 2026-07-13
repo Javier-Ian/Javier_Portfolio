@@ -30,7 +30,7 @@ document.querySelector('#app').innerHTML = `
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Available for creative projects</p>
         <h1>Ideas in motion.<br/><em>Stories</em> with impact.</h1>
-        <p class="hero-intro">Hi, I'm <strong>Ian Dave L. Javier</strong> — an aspiring IT professional combining technology, creativity, and thoughtful digital experiences.</p>
+        <p class="hero-intro">Hi, I'm <strong>Ian Dave L. Javier</strong> — an aspiring video editor and graphic artist transforming creative ideas into engaging visual stories.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore my work ${icon('arrow')}</a>
           <a class="text-link" href="#about">Get to know me <span>↓</span></a>
