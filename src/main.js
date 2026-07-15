@@ -45,7 +45,6 @@ document.querySelector('#app').innerHTML = `
         </div>
       </div>
 
-      <div class="hero-index">01 <span>/</span> 04</div>
       <a class="scroll-cue" href="#work"><span>Scroll</span><i></i></a>
     </section>
 
@@ -99,7 +98,6 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section class="about section" id="about">
-      <div class="about-number reveal">02</div>
       <div class="about-copy reveal">
         <p class="eyebrow"><span></span> A little about me</p>
         <h2>I'm learning with<br/><em>every</em> project I make.</h2>

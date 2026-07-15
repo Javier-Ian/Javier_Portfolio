@@ -61,8 +61,6 @@ h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.06em; }
 .floating-tag span { color: var(--orange); margin-right: 8px; }
 .tag-editor { right: -5%; top: 27%; transform: rotate(3deg); }
 .tag-designer { left: -3%; top: 57%; transform: rotate(-4deg); }
-.hero-index { position: absolute; bottom: 45px; right: 7vw; color: #fff; font-size: .72rem; letter-spacing: .15em; }
-.hero-index span { color: #555; margin: 0 7px; }
 .scroll-cue { position: absolute; bottom: 38px; left: 7vw; color: #777; display: flex; align-items: center; gap: 12px; text-transform: uppercase; font-size: .57rem; letter-spacing: .2em; transform: rotate(-90deg); transform-origin: left top; }
 .scroll-cue i { height: 1px; width: 34px; background: #777; animation: cue 1.8s ease-in-out infinite; }
 @keyframes cue { 50% { width: 55px; } }
@@ -117,7 +115,6 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 
 .about { min-height: 100vh; position: relative; display: grid; grid-template-columns: .35fr 1fr .65fr; column-gap: 7vw; row-gap: 75px; align-items: center; overflow: hidden; }
 .about::before { content: ''; position: absolute; width: 600px; height: 600px; border: 1px solid #202024; border-radius: 50%; left: -320px; top: 25%; }
-.about-number { align-self: start; color: #29292e; font: 800 clamp(7rem, 15vw, 15rem)/1 var(--display); letter-spacing: -.12em; }
 .about-copy { max-width: 690px; }
 .about-copy .eyebrow { margin-bottom: 35px; }
 .about-copy h2 { margin-bottom: 38px; }
@@ -181,7 +178,6 @@ footer .logo { color: #fff; }
   .portrait-card::after { background: linear-gradient(90deg, rgba(10,10,12,.8), transparent), linear-gradient(0deg, #0a0a0c 0%, transparent 35%); }
   .section-heading { align-items: start; flex-direction: column; }
   .about { grid-template-columns: 1fr; }
-  .about-number { position: absolute; top: 70px; right: 7vw; }
   .about-quote { margin-left: 30%; }
   .software-stage { min-height: 350px; }
 }
@@ -193,7 +189,6 @@ footer .logo { color: #fff; }
   .hero-actions { gap: 18px; align-items: flex-start; flex-direction: column; }
   .portrait-wrap { width: 88vw; height: 58vh; right: -18%; opacity: .42; }
   .tag-editor, .tag-designer { display: none; }
-  .hero-index { display: none; }
   .scroll-cue { left: 25px; bottom: 20px; }
   .section { padding-top: 90px; padding-bottom: 90px; }
   .section-heading { margin-bottom: 45px; }
