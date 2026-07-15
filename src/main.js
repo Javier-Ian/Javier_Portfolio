@@ -105,11 +105,35 @@ document.querySelector('#app').innerHTML = `
         <h2>I create visuals that<br/><em>feel</em> as good as they look.</h2>
         <p class="about-lead">I'm Ian, a developing creative based in the Philippines with a growing passion for editing and design. I love finding the right pace, frame, and visual language to make every idea memorable.</p>
         <p>Whether it's a punchy social edit, a cinematic sequence, or a bold graphic, I approach each project with curiosity and care.</p>
-        <div class="skills">
-          <span>Premiere Pro</span><span>After Effects</span><span>Photoshop</span><span>Illustrator</span><span>DaVinci Resolve</span>
-        </div>
       </div>
       <div class="about-quote reveal" data-delay="1"><span>“</span><p>Every frame is a chance<br/>to make someone <em>feel.</em></p></div>
+
+        <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
+          <div class="software-glow"></div>
+          <div class="software-beam"></div>
+          <div class="software-title"><span>Tools I use</span><strong>SOFTWARE</strong></div>
+
+          <div class="app-logo app-pr">
+            <img src="/assets/pr%20logo.png" alt="Premiere Pro" />
+            <small>Premiere Pro</small>
+          </div>
+          <div class="app-logo app-ps">
+            <img src="/assets/ps%20logo.png" alt="Photoshop" />
+            <small>Photoshop</small>
+          </div>
+          <div class="app-logo app-resolve">
+            <img src="/assets/davinci%20resolve%20logo.png" alt="DaVinci Resolve" />
+            <small>DaVinci Resolve</small>
+          </div>
+          <div class="app-logo app-canva">
+            <img src="/assets/canva%20logo.png" alt="Canva" />
+            <small>Canva</small>
+          </div>
+          <div class="app-logo app-capcut">
+            <img src="/assets/capcut%20logo.png" alt="CapCut" />
+            <small>CapCut</small>
+          </div>
+        </div>
     </section>
 
     <section class="contact section" id="contact">
