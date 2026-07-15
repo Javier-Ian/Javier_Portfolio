@@ -1,8 +1,8 @@
-╔════════════════════════════════════════════════════════════╗
+
                     🎨  IAN DAVE L. JAVIER
                Creative Portfolio • Video Editor
                  Graphic Designer • Multimedia
-╚════════════════════════════════════════════════════════════╝
+
 
                Ideas in Motion • Stories with Impact
 
