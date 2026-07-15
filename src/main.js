@@ -62,8 +62,6 @@ document.querySelector('#app').innerHTML = `
         <p class="about-lead">I'm Ian, an aspiring video editor and graphic artist based in the Philippines. I'm still building my experience, exploring different styles, and improving my skills one project at a time.</p>
         <p>I may not know everything yet, but I enjoy the creative process, listen to feedback, and always try to make my next edit or design better than the last.</p>
       </div>
-      <div class="about-quote reveal" data-delay="1"><span>“</span><p>Learning through every<br/><em>frame</em> and every design.</p></div>
-
       <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
         <div class="software-glow"></div>
         <div class="software-title"><span>Used</span><strong>SOFTWARES</strong></div>

@@ -113,20 +113,20 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .artwork-form strong span { color: var(--orange); }
 .artwork-form p { position: absolute; left: 8%; bottom: 7%; font-size: .55rem; letter-spacing: .16em; line-height: 1.6; }
 
-.about { min-height: auto; position: relative; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .55fr); column-gap: 7vw; row-gap: 42px; align-items: center; overflow: hidden; scroll-margin-top: 70px; padding-top: clamp(85px, 8vw, 125px); padding-bottom: clamp(85px, 8vw, 125px); }
+.about { min-height: auto; position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(380px, .8fr); column-gap: 5vw; row-gap: 42px; align-items: center; overflow: hidden; scroll-margin-top: 70px; padding-top: clamp(85px, 8vw, 125px); padding-bottom: clamp(85px, 8vw, 125px); }
 .about::before { content: ''; position: absolute; width: 600px; height: 600px; border: 1px solid #202024; border-radius: 50%; left: -320px; top: 25%; }
 .about-copy { grid-column: 1; width: 100%; max-width: 820px; }
 .about-copy .eyebrow { margin-bottom: 35px; }
 .about-copy h2 { margin-bottom: 32px; font-size: clamp(2.7rem, 4.6vw, 5.1rem); }
 .about-copy > p:not(.eyebrow) { color: #8d8d91; line-height: 1.8; max-width: 590px; font-size: .9rem; }
 .about-copy .about-lead { color: #d1d1d3 !important; font-size: 1.05rem !important; }
-.software-stage { grid-column: 1 / -1; position: relative; width: 100%; min-height: 390px; isolation: isolate; border: 0; background: transparent; box-shadow: none; perspective: 1000px; }
+.software-stage { grid-column: 2; grid-row: 1; container-type: inline-size; position: relative; width: 100%; min-height: 470px; isolation: isolate; border: 0; background: transparent; box-shadow: none; perspective: 1000px; }
 .software-stage::before { content: ''; position: absolute; z-index: -1; width: 430px; height: 430px; left: 55%; top: 48%; transform: translate(-50%,-50%); border: 1px solid rgba(255,77,46,.16); border-radius: 50%; }
 .software-stage::after { content: ''; position: absolute; z-index: -1; width: 290px; height: 290px; left: 55%; top: 48%; transform: translate(-50%,-50%); border: 1px solid rgba(255,255,255,.055); border-radius: 50%; }
 .software-glow { position: absolute; z-index: -2; width: 360px; height: 250px; left: 55%; top: 49%; transform: translate(-50%,-50%); border-radius: 50%; background: #5b1515; filter: blur(95px); opacity: .4; }
 .software-title { position: absolute; z-index: 2; left: 50%; top: 42%; width: max-content; text-align: center; transform: translateX(-50%); }
-.software-title span { position: absolute; left: 4%; bottom: 82%; color: #ff604e; font: italic clamp(2.5rem, 3.6vw, 3.8rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: rotate(-5deg); }
-.software-title strong { display: block; color: #f5f0df; font: 800 clamp(4.4rem, 6.7vw, 7.2rem)/.88 var(--display); letter-spacing: -.075em; text-shadow: 0 8px 0 rgba(40,8,5,.6), 0 15px 28px #000; }
+.software-title span { position: absolute; left: 4%; bottom: 82%; color: #ff604e; font: italic clamp(1.9rem, 7cqw, 3rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: rotate(-5deg); }
+.software-title strong { display: block; color: #f5f0df; font: 800 clamp(2.8rem, 12cqw, 4.6rem)/.88 var(--display); letter-spacing: -.075em; text-shadow: 0 8px 0 rgba(40,8,5,.6), 0 15px 28px #000; }
 .app-logo { --logo-rotate: 0deg; position: absolute; z-index: 3; display: flex; flex-direction: column; align-items: center; transform: rotate(var(--logo-rotate)); filter: drop-shadow(0 16px 11px rgba(0,0,0,.58)); transition: transform .35s cubic-bezier(.2,.8,.2,1), filter .35s; }
 .app-logo:hover { z-index: 8; transform: translateY(-10px) rotate(0) scale(1.12); filter: drop-shadow(0 24px 15px rgba(0,0,0,.7)) brightness(1.08); }
 .app-logo img { width: 104px; height: 104px; object-fit: contain; display: block; }
@@ -180,7 +180,7 @@ footer .logo { color: #fff; }
   .about { grid-template-columns: 1fr; }
   .about-copy, .about-quote { grid-column: 1; }
   .about-quote { margin-left: 30%; }
-  .software-stage { min-height: 350px; }
+  .software-stage { grid-column: 1; grid-row: auto; min-height: 350px; }
 }
 
 @media (max-width: 640px) {
