@@ -127,9 +127,8 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .software-stage::before { content: ''; position: absolute; z-index: -1; width: 430px; height: 430px; left: 55%; top: 48%; transform: translate(-50%,-50%); border: 1px solid rgba(255,77,46,.16); border-radius: 50%; }
 .software-stage::after { content: ''; position: absolute; z-index: -1; width: 290px; height: 290px; left: 55%; top: 48%; transform: translate(-50%,-50%); border: 1px solid rgba(255,255,255,.055); border-radius: 50%; }
 .software-glow { position: absolute; z-index: -2; width: 360px; height: 250px; left: 55%; top: 49%; transform: translate(-50%,-50%); border-radius: 50%; background: #5b1515; filter: blur(95px); opacity: .4; }
-.software-beam { position: absolute; z-index: 1; left: 6%; top: 55%; width: 69%; height: 1px; background: #ff6545; box-shadow: 0 0 4px #fff, 0 0 12px #ff3216, 0 0 27px #ff3216; opacity: .8; }
-.software-title { position: absolute; z-index: 2; left: 50%; top: 37%; text-align: center; transform: translateX(-50%); }
-.software-title span { position: absolute; left: 50%; bottom: 81%; width: max-content; color: #ff604e; font: italic clamp(2.5rem, 3.6vw, 3.8rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: translateX(-50%) rotate(-5deg); }
+.software-title { position: absolute; z-index: 2; left: 50%; top: 42%; width: max-content; text-align: center; transform: translateX(-50%); }
+.software-title span { position: absolute; left: 4%; bottom: 82%; color: #ff604e; font: italic clamp(2.5rem, 3.6vw, 3.8rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: rotate(-5deg); }
 .software-title strong { display: block; color: #f5f0df; font: 800 clamp(4.4rem, 6.7vw, 7.2rem)/.88 var(--display); letter-spacing: -.075em; text-shadow: 0 8px 0 rgba(40,8,5,.6), 0 15px 28px #000; }
 .app-logo { --logo-rotate: 0deg; position: absolute; z-index: 3; display: flex; flex-direction: column; align-items: center; transform: rotate(var(--logo-rotate)); filter: drop-shadow(0 16px 11px rgba(0,0,0,.58)); transition: transform .35s cubic-bezier(.2,.8,.2,1), filter .35s; }
 .app-logo:hover { z-index: 8; transform: translateY(-10px) rotate(0) scale(1.12); filter: drop-shadow(0 24px 15px rgba(0,0,0,.7)) brightness(1.08); }

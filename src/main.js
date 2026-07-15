@@ -110,8 +110,7 @@ document.querySelector('#app').innerHTML = `
 
         <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
           <div class="software-glow"></div>
-          <div class="software-beam"></div>
-          <div class="software-title"><span>Tools I use</span><strong>SOFTWARE</strong></div>
+          <div class="software-title"><span>Used</span><strong>SOFTWARES</strong></div>
 
           <div class="app-logo app-pr">
             <img src="/assets/pr%20logo.png" alt="Premiere Pro" />
