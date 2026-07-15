@@ -128,8 +128,8 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .software-stage::after { content: ''; position: absolute; z-index: -1; width: 290px; height: 290px; left: 55%; top: 48%; transform: translate(-50%,-50%); border: 1px solid rgba(255,255,255,.055); border-radius: 50%; }
 .software-glow { position: absolute; z-index: -2; width: 360px; height: 250px; left: 55%; top: 49%; transform: translate(-50%,-50%); border-radius: 50%; background: #5b1515; filter: blur(95px); opacity: .4; }
 .software-beam { position: absolute; z-index: 1; left: 6%; top: 55%; width: 69%; height: 1px; background: #ff6545; box-shadow: 0 0 4px #fff, 0 0 12px #ff3216, 0 0 27px #ff3216; opacity: .8; }
-.software-title { position: absolute; z-index: 2; left: 9%; top: 37%; }
-.software-title span { position: absolute; left: 4%; bottom: 81%; width: max-content; color: #ff604e; font: italic clamp(2.5rem, 3.6vw, 3.8rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: rotate(-5deg); }
+.software-title { position: absolute; z-index: 2; left: 50%; top: 37%; text-align: center; transform: translateX(-50%); }
+.software-title span { position: absolute; left: 50%; bottom: 81%; width: max-content; color: #ff604e; font: italic clamp(2.5rem, 3.6vw, 3.8rem)/1 Georgia, serif; text-shadow: 0 5px 14px #000; transform: translateX(-50%) rotate(-5deg); }
 .software-title strong { display: block; color: #f5f0df; font: 800 clamp(4.4rem, 6.7vw, 7.2rem)/.88 var(--display); letter-spacing: -.075em; text-shadow: 0 8px 0 rgba(40,8,5,.6), 0 15px 28px #000; }
 .app-logo { --logo-rotate: 0deg; position: absolute; z-index: 3; display: flex; flex-direction: column; align-items: center; transform: rotate(var(--logo-rotate)); filter: drop-shadow(0 16px 11px rgba(0,0,0,.58)); transition: transform .35s cubic-bezier(.2,.8,.2,1), filter .35s; }
 .app-logo:hover { z-index: 8; transform: translateY(-10px) rotate(0) scale(1.12); filter: drop-shadow(0 24px 15px rgba(0,0,0,.7)) brightness(1.08); }
@@ -141,7 +141,7 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .app-ps img { width: 122px; height: 122px; }
 .app-resolve { --logo-rotate: -4deg; left: 48%; top: auto; bottom: 3%; }
 .app-resolve img { width: 108px; height: 108px; }
-.app-canva { --logo-rotate: 6deg; left: 72%; bottom: 10%; }
+.app-canva { --logo-rotate: 6deg; left: 66%; top: 5%; bottom: auto; }
 .app-canva img { width: 108px; height: 108px; }
 .app-capcut { --logo-rotate: -4deg; left: 60%; bottom: -2%; }
 .app-capcut img { width: 116px; height: 116px; }
@@ -207,7 +207,7 @@ footer .logo { color: #fff; }
   .about { gap: 35px; }
   .about-quote { margin-left: 10%; }
   .software-stage { min-height: 360px; margin-left: -8px; margin-right: -8px; }
-  .software-title { left: 6%; top: 43%; }
+  .software-title { left: 50%; top: 43%; transform: translateX(-50%); }
   .software-title span { font-size: 2rem; }
   .software-title strong { font-size: clamp(2.35rem, 12vw, 4rem); }
   .app-logo img { width: 60px; height: 60px; }
@@ -215,7 +215,7 @@ footer .logo { color: #fff; }
   .app-resolve { left: 57%; top: auto; bottom: 3%; }
   .app-ps { left: 58%; top: 7%; bottom: auto; }
   .app-ps img, .app-canva img, .app-capcut img { width: 68px; height: 68px; }
-  .app-canva { left: auto; right: 4%; bottom: 23%; }
+  .app-canva { left: auto; right: 4%; top: 12%; bottom: auto; }
   .app-capcut { left: 35%; bottom: 1%; }
   .contact-row { align-items: flex-end; }
   .contact-circle { min-width: 82px; width: 82px; }
