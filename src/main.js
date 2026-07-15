@@ -55,6 +55,42 @@ document.querySelector('#app').innerHTML = `
       </div>
     </section>
 
+    <section class="about section" id="about">
+      <div class="about-copy reveal">
+        <p class="eyebrow"><span></span> A little about me</p>
+        <h2>I'm learning with<br/><em>every</em> project I make.</h2>
+        <p class="about-lead">I'm Ian, an aspiring video editor and graphic artist based in the Philippines. I'm still building my experience, exploring different styles, and improving my skills one project at a time.</p>
+        <p>I may not know everything yet, but I enjoy the creative process, listen to feedback, and always try to make my next edit or design better than the last.</p>
+      </div>
+      <div class="about-quote reveal" data-delay="1"><span>“</span><p>Learning through every<br/><em>frame</em> and every design.</p></div>
+
+      <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
+        <div class="software-glow"></div>
+        <div class="software-title"><span>Used</span><strong>SOFTWARES</strong></div>
+
+        <div class="app-logo app-pr">
+          <img src="/assets/pr%20logo.png" alt="Premiere Pro" />
+          <small>Premiere Pro</small>
+        </div>
+        <div class="app-logo app-ps">
+          <img src="/assets/ps%20logo.png" alt="Photoshop" />
+          <small>Photoshop</small>
+        </div>
+        <div class="app-logo app-resolve">
+          <img src="/assets/davinci%20resolve%20logo.png" alt="DaVinci Resolve" />
+          <small>DaVinci Resolve</small>
+        </div>
+        <div class="app-logo app-canva">
+          <img src="/assets/canva%20logo.png" alt="Canva" />
+          <small>Canva</small>
+        </div>
+        <div class="app-logo app-capcut">
+          <img src="/assets/capcut%20logo.png" alt="CapCut" />
+          <small>CapCut</small>
+        </div>
+      </div>
+    </section>
+
     <section class="work section" id="work">
       <div class="section-heading reveal">
         <div><p class="eyebrow"><span></span> Selected work</p><h2>A collection of things<br/>I've brought to <em>life.</em></h2></div>
@@ -95,42 +131,6 @@ document.querySelector('#app').innerHTML = `
           <div class="project-meta"><div><span>05 / EDITORIAL</span><h3>Form Studies</h3></div><p>Layout · Typography</p></div>
         </article>
       </div>
-    </section>
-
-    <section class="about section" id="about">
-      <div class="about-copy reveal">
-        <p class="eyebrow"><span></span> A little about me</p>
-        <h2>I'm learning with<br/><em>every</em> project I make.</h2>
-        <p class="about-lead">I'm Ian, an aspiring video editor and graphic artist based in the Philippines. I'm still building my experience, exploring different styles, and improving my skills one project at a time.</p>
-        <p>I may not know everything yet, but I enjoy the creative process, listen to feedback, and always try to make my next edit or design better than the last.</p>
-      </div>
-      <div class="about-quote reveal" data-delay="1"><span>“</span><p>Learning through every<br/><em>frame</em> and every design.</p></div>
-
-        <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
-          <div class="software-glow"></div>
-          <div class="software-title"><span>Used</span><strong>SOFTWARES</strong></div>
-
-          <div class="app-logo app-pr">
-            <img src="/assets/pr%20logo.png" alt="Premiere Pro" />
-            <small>Premiere Pro</small>
-          </div>
-          <div class="app-logo app-ps">
-            <img src="/assets/ps%20logo.png" alt="Photoshop" />
-            <small>Photoshop</small>
-          </div>
-          <div class="app-logo app-resolve">
-            <img src="/assets/davinci%20resolve%20logo.png" alt="DaVinci Resolve" />
-            <small>DaVinci Resolve</small>
-          </div>
-          <div class="app-logo app-canva">
-            <img src="/assets/canva%20logo.png" alt="Canva" />
-            <small>Canva</small>
-          </div>
-          <div class="app-logo app-capcut">
-            <img src="/assets/capcut%20logo.png" alt="CapCut" />
-            <small>CapCut</small>
-          </div>
-        </div>
     </section>
 
     <section class="contact section" id="contact">
