@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1280" viewBox="0 0 720 1280">
+  <defs>
+    <radialGradient id="glow" cx="70%" cy="35%" r="75%"><stop stop-color="#ff674b"/><stop offset=".38" stop-color="#6f2027"/><stop offset="1" stop-color="#100f13"/></radialGradient>
+    <filter id="noise"><feTurbulence baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 .13 0"/></filter>
+  </defs>
+  <rect width="720" height="1280" fill="url(#glow)"/>
+  <rect width="720" height="1280" filter="url(#noise)" opacity=".42"/>
+  <circle cx="450" cy="520" r="250" fill="none" stroke="#ff9a84" stroke-width="2" opacity=".42"/>
+  <circle cx="450" cy="520" r="170" fill="none" stroke="#ff9a84" stroke-width="2" opacity=".35"/>
+  <path d="M360 360 580 520 360 680Z" fill="#ff4d2e" opacity=".82"/>
+  <text x="58" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="8">IAN JAVIER</text>
+  <text x="58" y="1090" fill="#fff" font-family="Arial, sans-serif" font-size="86" font-weight="800">YOUR REEL</text>
+  <text x="62" y="1145" fill="#ff9c88" font-family="Arial, sans-serif" font-size="18" letter-spacing="7">SHORT FORM · 9:16</text>
+</svg>

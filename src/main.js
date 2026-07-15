@@ -17,7 +17,7 @@ document.querySelector('#app').innerHTML = `
     <a class="logo" href="#home" aria-label="Ian Javier home">IJ<span>.</span></a>
     <button class="menu-button" aria-label="Open navigation" aria-expanded="false">${icon('menu')}</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#work">Selected work</a>
+      <a href="#work">My Works</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -91,25 +91,41 @@ document.querySelector('#app').innerHTML = `
 
     <section class="work section" id="work">
       <div class="section-heading reveal">
-        <div><p class="eyebrow"><span></span> Selected work</p><h2>A collection of things<br/>I've brought to <em>life.</em></h2></div>
-        <p>Exploring rhythm, color, and composition across moving images and graphic design.</p>
+        <div><p class="eyebrow"><span></span> My Works</p><h2>Here are some of<br/>my <em>works.</em></h2></div>
       </div>
 
-      <article class="featured-project reveal">
-        <div class="video-frame">
-          <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline>
-            <source src="/assets/showreel.mp4" type="video/mp4" />
-            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4" />
-          </video>
-          <button class="play-button" aria-label="Play showreel">${icon('play')}</button>
-          <div class="video-label">00:45 — SHOWREEL</div>
-          <div class="video-corner">PLAY<br/>THE<br/>REEL</div>
+      <section class="reels-showcase reveal" aria-labelledby="reels-title">
+        <div class="reels-heading">
+          <h3 id="reels-title"><em>REELS</em> Short Form Videos</h3>
         </div>
-        <div class="project-meta">
-          <div><span>01 / MOTION</span><h3>Editor Showreel</h3></div>
-          <p>A fast-paced compilation of cuts, transitions, color, and visual storytelling.</p>
+
+        <div class="reels-grid">
+          <article class="reel-card">
+            <div class="reel-frame" data-video-player>
+              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-01.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play short-form reel 1">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-video-player>
+              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-02.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play short-form reel 2">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-video-player>
+              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-03.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play short-form reel 3">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-video-player>
+              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-04.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play short-form reel 4">${icon('play')}</button>
+            </div>
+          </article>
         </div>
-      </article>
+      </section>
 
       <div class="project-grid">
         <article class="project-card reveal">
@@ -164,12 +180,20 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', 'false')
 }))
 
-const video = document.querySelector('video')
-const playButton = document.querySelector('.play-button')
-playButton.addEventListener('click', () => video.paused ? video.play() : video.pause())
-video.addEventListener('play', () => playButton.classList.add('is-playing'))
-video.addEventListener('pause', () => playButton.classList.remove('is-playing'))
-video.addEventListener('click', () => video.paused ? video.play() : video.pause())
+document.querySelectorAll('[data-video-player]').forEach(player => {
+  const video = player.querySelector('video')
+  const playButton = player.querySelector('.play-button')
+  const toggleVideo = () => {
+    if (!video.paused) return video.pause()
+    const playRequest = video.play()
+    if (playRequest) playRequest.catch(() => {})
+  }
+
+  playButton.addEventListener('click', toggleVideo)
+  video.addEventListener('click', toggleVideo)
+  video.addEventListener('play', () => playButton.classList.add('is-playing'))
+  video.addEventListener('pause', () => playButton.classList.remove('is-playing'))
+})
 
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
