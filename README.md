@@ -67,4 +67,8 @@ I appreciate you taking the time to explore my portfolio.
 If my work catches your interest, I'd be happy to connect,
 collaborate, or simply have a conversation.
 
+<<<<<<< HEAD
 Have a great day! 👋
+=======
+Have a great day! 👋
+>>>>>>> 7c43b3bb0a3fd86284d897d41c1b37e2f88d617b
