@@ -6,7 +6,7 @@
 
                Ideas in Motion • Stories with Impact
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ABOUT
 
@@ -19,7 +19,7 @@ continuously learning and improving my creative skills. Every
 design, edit, and project reflects another step in my journey as
 a multimedia creative.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 WHAT YOU'LL FIND
 
@@ -35,7 +35,7 @@ WHAT YOU'LL FIND
 
 📬 Ways to Get in Touch
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 CREATIVE TOOLS
 
@@ -45,7 +45,7 @@ CREATIVE TOOLS
 ✨ Canva
 📱 CapCut
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 MY APPROACH
 
@@ -58,7 +58,7 @@ I'm still gaining experience, exploring different styles, and
 challenging myself with every new project. My goal is to keep
 learning and become a better creative professional over time.
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 THANK YOU FOR VISITING
 
@@ -67,8 +67,5 @@ I appreciate you taking the time to explore my portfolio.
 If my work catches your interest, I'd be happy to connect,
 collaborate, or simply have a conversation.
 
-<<<<<<< HEAD
+
 Have a great day! 👋
-=======
-Have a great day! 👋
->>>>>>> 7c43b3bb0a3fd86284d897d41c1b37e2f88d617b
