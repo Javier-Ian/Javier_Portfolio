@@ -135,25 +135,25 @@ document.querySelector('#app').innerHTML = `
         <div class="longform-grid">
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-01.mp4" type="video/mp4" /></video>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/videos/BREAKING%20Ford%20SHUTS%20DOWN%20U.S.%20Production%20%E2%80%94%20Trump%20.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 1">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-02.mp4" type="video/mp4" /></video>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/videos/revise%20vid.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 2">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-03.mp4" type="video/mp4" /></video>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/videos/St.gregory%20University.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 3">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-04.mp4" type="video/mp4" /></video>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/videos/Trump%E2%80%99s%20Tariffs%20SPARK%20Uprising.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 4">${icon('play')}</button>
             </div>
           </article>
