@@ -127,24 +127,38 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
 
-      <div class="project-grid">
-        <article class="project-card reveal">
-          <div class="artwork artwork-pulse"><div class="pulse-type">PULSE</div><div class="pulse-ring"></div><span>MOVE WITH<br/>THE MOMENT</span></div>
-          <div class="project-meta"><div><span>02 / CAMPAIGN</span><h3>Pulse Identity</h3></div><p>Brand direction · Social</p></div>
-        </article>
-        <article class="project-card reveal" data-delay="1">
-          <div class="artwork artwork-noise"><div class="noise-orb"></div><strong>BEYOND<br/>THE NOISE</strong><small>POSTER SERIES — 2026</small></div>
-          <div class="project-meta"><div><span>03 / POSTER</span><h3>Beyond The Noise</h3></div><p>Art direction · Design</p></div>
-        </article>
-        <article class="project-card reveal">
-          <div class="artwork artwork-frame"><div class="frame-window"><span>THE<br/>UNSEEN</span></div><p>Stories live<br/>between frames.</p></div>
-          <div class="project-meta"><div><span>04 / SHORT FILM</span><h3>The Unseen</h3></div><p>Edit · Color grade</p></div>
-        </article>
-        <article class="project-card reveal" data-delay="1">
-          <div class="artwork artwork-form"><div class="form-shape"></div><strong>FORM<span>+</span></strong><p>CREATIVE STUDIES<br/>VOL. 01</p></div>
-          <div class="project-meta"><div><span>05 / EDITORIAL</span><h3>Form Studies</h3></div><p>Layout · Typography</p></div>
-        </article>
-      </div>
+      <section class="longform-showcase reveal" aria-labelledby="longform-title">
+        <div class="reels-heading longform-heading">
+          <h3 id="longform-title"><em>LONG FORM</em> Videos</h3>
+        </div>
+
+        <div class="longform-grid">
+          <article class="longform-card">
+            <div class="longform-frame" data-video-player>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-01.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play long-form video 1">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="longform-card">
+            <div class="longform-frame" data-video-player>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-02.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play long-form video 2">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="longform-card">
+            <div class="longform-frame" data-video-player>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-03.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play long-form video 3">${icon('play')}</button>
+            </div>
+          </article>
+          <article class="longform-card">
+            <div class="longform-frame" data-video-player>
+              <video poster="/assets/showreel-poster.svg" preload="metadata" playsinline><source src="/assets/long-form/long-04.mp4" type="video/mp4" /></video>
+              <button class="play-button" aria-label="Play long-form video 4">${icon('play')}</button>
+            </div>
+          </article>
+        </div>
+      </section>
     </section>
 
     <section class="contact section" id="contact">

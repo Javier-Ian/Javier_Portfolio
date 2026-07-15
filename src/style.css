@@ -101,6 +101,17 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .reel-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 13px; }
 .reel-caption h4 { margin: 0; font: 600 .85rem var(--display); }
 .reel-caption span { color: #8a867e; font-size: .5rem; letter-spacing: .14em; }
+.longform-showcase { margin-top: 105px; }
+.longform-heading { margin-bottom: 32px; }
+.longform-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(18px, 2.2vw, 34px); }
+.longform-card { min-width: 0; }
+.longform-frame { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 20px; background: #171419; box-shadow: 0 18px 38px rgba(26,13,11,.18); cursor: pointer; }
+.longform-frame::after { content: ''; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.08), transparent 65%, rgba(0,0,0,.28)); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); }
+.longform-frame video { display: block; width: 100%; height: 100%; object-fit: cover; }
+.longform-card:nth-child(2) video { filter: hue-rotate(10deg) brightness(.96); }
+.longform-card:nth-child(3) video { filter: hue-rotate(-12deg) saturate(.92); }
+.longform-card:nth-child(4) video { filter: hue-rotate(22deg) brightness(.93); }
+.longform-frame .play-button { width: clamp(62px, 5vw, 82px); }
 .video-frame { aspect-ratio: 16/8.2; background: #151418; overflow: hidden; position: relative; cursor: pointer; }
 .video-frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .video-frame::after { content: ''; pointer-events: none; position: absolute; inset: 0; box-shadow: inset 0 0 120px rgba(0,0,0,.35); }
@@ -230,6 +241,9 @@ footer .logo { color: #fff; }
   .reels-heading { align-items: center; }
   .reels-grid { display: flex; width: calc(100% + 20px); gap: 14px; overflow-x: auto; padding: 0 20px 18px 0; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: var(--orange) #d5d0c7; }
   .reel-card { flex: 0 0 min(72vw, 285px); scroll-snap-align: start; }
+  .longform-showcase { margin-top: 70px; }
+  .longform-grid { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .longform-frame { border-radius: 16px; }
   .video-frame { width: 100%; aspect-ratio: 4/3; }
   .play-button { width: 68px; }
   .project-grid { width: 100%; min-width: 0; grid-template-columns: minmax(0, 1fr); gap: 65px; }
