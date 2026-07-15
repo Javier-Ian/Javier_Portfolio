@@ -102,11 +102,11 @@ document.querySelector('#app').innerHTML = `
       <div class="about-number reveal">02</div>
       <div class="about-copy reveal">
         <p class="eyebrow"><span></span> A little about me</p>
-        <h2>I create visuals that<br/><em>feel</em> as good as they look.</h2>
-        <p class="about-lead">I'm Ian, a developing creative based in the Philippines with a growing passion for editing and design. I love finding the right pace, frame, and visual language to make every idea memorable.</p>
-        <p>Whether it's a punchy social edit, a cinematic sequence, or a bold graphic, I approach each project with curiosity and care.</p>
+        <h2>I'm learning with<br/><em>every</em> project I make.</h2>
+        <p class="about-lead">I'm Ian, an aspiring video editor and graphic artist based in the Philippines. I'm still building my experience, exploring different styles, and improving my skills one project at a time.</p>
+        <p>I may not know everything yet, but I enjoy the creative process, listen to feedback, and always try to make my next edit or design better than the last.</p>
       </div>
-      <div class="about-quote reveal" data-delay="1"><span>“</span><p>Every frame is a chance<br/>to make someone <em>feel.</em></p></div>
+      <div class="about-quote reveal" data-delay="1"><span>“</span><p>Learning through every<br/><em>frame</em> and every design.</p></div>
 
         <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
           <div class="software-glow"></div>
