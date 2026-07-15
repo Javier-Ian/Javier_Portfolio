@@ -132,14 +132,14 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .app-logo img { width: 104px; height: 104px; object-fit: contain; display: block; }
 .app-logo small { margin-top: 1px; padding: 4px 8px; border: 1px solid rgba(255,255,255,.16); border-radius: 20px; color: #eee; background: rgba(8,8,10,.78); backdrop-filter: blur(8px); font-size: .49rem; white-space: nowrap; opacity: 0; transform: translateY(-5px); transition: opacity .25s, transform .25s; }
 .app-logo:hover small { opacity: 1; transform: translateY(0); }
-.app-pr { --logo-rotate: -5deg; left: 34%; top: 58%; }
-.app-ps { --logo-rotate: 3deg; left: 55%; top: 0; bottom: auto; }
+.app-pr { --logo-rotate: -5deg; left: 22%; top: 58%; }
+.app-ps { --logo-rotate: 3deg; left: 48%; top: 0; bottom: auto; }
 .app-ps img { width: 134px; height: 134px; }
-.app-resolve { --logo-rotate: -4deg; left: 48%; top: auto; bottom: 3%; }
+.app-resolve { --logo-rotate: -4deg; left: 47%; top: auto; bottom: 3%; }
 .app-resolve img { width: 119px; height: 119px; }
-.app-canva { --logo-rotate: 6deg; left: 66%; top: 5%; bottom: auto; }
+.app-canva { --logo-rotate: 6deg; left: 72%; top: 5%; bottom: auto; }
 .app-canva img { width: 119px; height: 119px; }
-.app-capcut { --logo-rotate: -4deg; left: 60%; bottom: -2%; }
+.app-capcut { --logo-rotate: -4deg; left: 72%; bottom: -2%; }
 .app-capcut img { width: 128px; height: 128px; }
 .about-quote { grid-column: 2; border-left: 1px solid #35353a; padding-left: 35px; }
 .about-quote > span { color: var(--orange); font: 5rem/1 Georgia, serif; }
@@ -206,12 +206,12 @@ footer .logo { color: #fff; }
   .software-title span { font-size: 2rem; }
   .software-title strong { font-size: clamp(2.35rem, 12vw, 4rem); }
   .app-logo img { width: 66px; height: 66px; }
-  .app-pr { left: 11%; top: 70%; }
-  .app-resolve { left: 57%; top: auto; bottom: 3%; }
-  .app-ps { left: 58%; top: 7%; bottom: auto; }
+  .app-pr { left: 8%; top: 70%; }
+  .app-resolve { left: 39%; top: auto; bottom: 3%; }
+  .app-ps { left: 38%; top: 7%; bottom: auto; }
   .app-ps img, .app-canva img, .app-capcut img { width: 75px; height: 75px; }
-  .app-canva { left: auto; right: 4%; top: 12%; bottom: auto; }
-  .app-capcut { left: 35%; bottom: 1%; }
+  .app-canva { left: auto; right: 3%; top: 12%; bottom: auto; }
+  .app-capcut { left: auto; right: 4%; bottom: 1%; }
   .contact-row { align-items: flex-end; }
   .contact-circle { min-width: 82px; width: 82px; }
   .contact-details { align-items: flex-start; flex-direction: column; gap: 18px; margin-top: 60px; }
