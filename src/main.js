@@ -135,25 +135,25 @@ document.querySelector('#app').innerHTML = `
         <div class="longform-grid">
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline><source src="/assets/videos/BREAKING%20Ford%20SHUTS%20DOWN%20U.S.%20Production%20%E2%80%94%20Trump%20.mp4" type="video/mp4" /></video>
+              <video preload="metadata" playsinline controls><source src="/assets/videos/BREAKING%20Ford%20SHUTS%20DOWN%20U.S.%20Production%20%E2%80%94%20Trump%20.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 1">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline><source src="/assets/videos/revise%20vid.mp4" type="video/mp4" /></video>
+              <video preload="metadata" playsinline controls><source src="/assets/videos/revise%20vid.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 2">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline><source src="/assets/videos/St.gregory%20University.mp4" type="video/mp4" /></video>
+              <video preload="metadata" playsinline controls><source src="/assets/videos/St.gregory%20University.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 3">${icon('play')}</button>
             </div>
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline><source src="/assets/videos/Trump%E2%80%99s%20Tariffs%20SPARK%20Uprising.mp4" type="video/mp4" /></video>
+              <video preload="metadata" playsinline controls><source src="/assets/videos/Trump%E2%80%99s%20Tariffs%20SPARK%20Uprising.mp4" type="video/mp4" /></video>
               <button class="play-button" aria-label="Play long-form video 4">${icon('play')}</button>
             </div>
           </article>
@@ -194,6 +194,8 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   menuButton.setAttribute('aria-expanded', 'false')
 }))
 
+const portfolioVideos = [...document.querySelectorAll('[data-video-player] video')]
+
 document.querySelectorAll('[data-video-player]').forEach(player => {
   const video = player.querySelector('video')
   const playButton = player.querySelector('.play-button')
@@ -204,8 +206,13 @@ document.querySelectorAll('[data-video-player]').forEach(player => {
   }
 
   playButton.addEventListener('click', toggleVideo)
-  video.addEventListener('click', toggleVideo)
-  video.addEventListener('play', () => playButton.classList.add('is-playing'))
+  if (!video.controls) video.addEventListener('click', toggleVideo)
+  video.addEventListener('play', () => {
+    portfolioVideos.forEach(otherVideo => {
+      if (otherVideo !== video && !otherVideo.paused) otherVideo.pause()
+    })
+    playButton.classList.add('is-playing')
+  })
   video.addEventListener('pause', () => playButton.classList.remove('is-playing'))
 })
 
