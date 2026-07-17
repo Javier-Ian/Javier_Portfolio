@@ -6,6 +6,10 @@ const icon = (name) => {
     play: '<path d="m9 7 8 5-8 5V7Z"/>',
     mail: '<path d="M4 6h16v12H4V6Zm0 1 8 6 8-6"/>',
     instagram: '<rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.5"/><path d="M17.5 6.5h.01"/>',
+    linkedin: '<path d="M6 9v9M6 6.5v.01M10 18v-5c0-2.2 4-2.4 4 0v5M10 9v9M3.5 3.5h17v17h-17z"/>',
+    github: '<path d="M9 19c-4 .8-4-2-5-2.5M14 21v-3.1c0-.9.1-1.4-.4-1.9 3.2-.4 6.4-1.6 6.4-7a5.4 5.4 0 0 0-1.4-3.8A5 5 0 0 0 18.5 2S17.4 1.6 14 3.4a13.4 13.4 0 0 0-5 0C5.6 1.6 4.5 2 4.5 2a5 5 0 0 0-.1 3.2A5.4 5.4 0 0 0 3 9c0 5.4 3.2 6.6 6.4 7-.5.5-.6 1-.6 1.9V21"/>',
+    phone: '<path d="M7 3H4.5A1.5 1.5 0 0 0 3 4.5C3 13.6 10.4 21 19.5 21a1.5 1.5 0 0 0 1.5-1.5V17l-5-1-1.3 2.2a15.7 15.7 0 0 1-8.9-8.9L8 8 7 3Z"/>',
+    download: '<path d="M12 3v12m-5-5 5 5 5-5M5 20h14"/>',
     up: '<path d="m6 15 6-6 6 6"/>',
     menu: '<path d="M4 8h16M4 16h16"/>'
   }
@@ -48,11 +52,11 @@ document.querySelector('#app').innerHTML = `
     <a class="logo" href="#home" aria-label="Ian Javier home">IJ<span>.</span></a>
     <button class="menu-button" aria-label="Open navigation" aria-expanded="false">${icon('menu')}</button>
     <nav class="nav" aria-label="Main navigation">
-      <a href="#work">My Works</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">Explore My Work</a>
+      <a href="#about">Get to know me</a>
+      <a href="/assets/Ian-Javier-Resume.pdf" download>Download Resume</a>
     </nav>
-    <a class="header-cta" href="#contact">Let's work together ${icon('arrow')}</a>
+    <a class="header-cta" href="/assets/Ian-Javier-Resume.pdf" download>Download Resume ${icon('download')}</a>
   </header>
 
   <main>
@@ -61,7 +65,10 @@ document.querySelector('#app').innerHTML = `
       <div class="hero-copy reveal">
         <p class="eyebrow"><span></span> Available for creative projects</p>
         <h1>Ideas in motion.<br/><em>Stories</em> with impact.</h1>
-        <p class="hero-intro">Hi, I'm <strong>Ian Dave L. Javier</strong> — an aspiring video editor and graphic artist transforming creative ideas into engaging visual stories.</p>
+        <div class="hero-intro">
+          <p>I'm Ian, a multimedia designer and video editor based in the Philippines. I enjoy turning ideas into engaging visuals through video editing and graphic design. Whether I'm creating content for brands or editing videos, I focus on producing work that is clean, purposeful, and visually engaging.</p>
+          <p>Every project is an opportunity to learn something new. I value creativity, feedback, and continuous improvement, always striving to create work that's better than the last.</p>
+        </div>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore my work ${icon('arrow')}</a>
           <a class="text-link" href="#about">Get to know me <span>↓</span></a>
@@ -89,9 +96,9 @@ document.querySelector('#app').innerHTML = `
     <section class="about section" id="about">
       <div class="about-copy reveal">
         <p class="eyebrow"><span></span> A little about me</p>
-        <h2>I'm learning with<br/><em>every</em> project I make.</h2>
-        <p class="about-lead">I'm Ian, an aspiring video editor and graphic artist based in the Philippines. I'm still building my experience, exploring different styles, and improving my skills one project at a time.</p>
-        <p>I may not know everything yet, but I enjoy the creative process, listen to feedback, and always try to make my next edit or design better than the last.</p>
+        <h2>Creating with <em>purpose.</em><br/>Growing through experience.</h2>
+        <p class="about-lead">I'm Ian, a video editor and graphic artist based in the Philippines. I create visual content for school, community, and digital projects, with a focus on clear storytelling and thoughtful design.</p>
+        <p>I value feedback, collaboration, and steady improvement. Each project helps me refine my process and create stronger work.</p>
       </div>
       <div class="software-stage" aria-label="Software I use: Premiere Pro, Photoshop, DaVinci Resolve, Canva, and CapCut">
         <div class="software-glow"></div>
@@ -279,15 +286,20 @@ document.querySelector('#app').innerHTML = `
     </dialog>
 
     <section class="contact section" id="contact">
-      <p class="eyebrow reveal"><span></span> Have a project in mind?</p>
+      <p class="eyebrow reveal"><span></span> Let's Work Together</p>
       <div class="contact-row reveal">
-        <h2>Let's make something<br/><em>worth watching.</em></h2>
-        <a class="contact-circle" href="mailto:your.email@example.com" aria-label="Email Ian">${icon('arrow')}</a>
+        <div class="contact-copy">
+          <h2>Let's work<br/><em>together.</em></h2>
+          <p class="contact-message">I'm always open to opportunities in video editing, graphic design, and creative multimedia.</p>
+        </div>
+        <a class="contact-circle" href="mailto:ianjavier139@gmail.com" aria-label="Email Ian about a creative project"><span>Email me</span>${icon('arrow')}</a>
       </div>
       <div class="contact-details reveal">
-        <a href="mailto:your.email@example.com">${icon('mail')} your.email@example.com</a>
-        <a href="https://instagram.com/" target="_blank" rel="noreferrer">${icon('instagram')} @yourhandle</a>
-        <span>Based in the Philippines · Available worldwide</span>
+        <a href="mailto:ianjavier139@gmail.com">${icon('mail')} ianjavier139@gmail.com</a>
+        <a href="https://linkedin.com/in/Javier-Ian" target="_blank" rel="noreferrer">${icon('linkedin')} LinkedIn</a>
+        <a href="https://github.com/Javier-Ian" target="_blank" rel="noreferrer">${icon('github')} GitHub</a>
+        <a href="tel:+639675866309309">${icon('phone')} +63 967 586 6309309</a>
+        <span>Based in the Philippines &middot; Available worldwide</span>
       </div>
     </section>
   </main>

@@ -22,8 +22,8 @@ svg { width: 1.15em; fill: none; stroke: currentColor; stroke-width: 1.8; stroke
 
 .site-header { height: 82px; position: fixed; z-index: 20; top: 0; left: 0; right: 0; display: flex; align-items: center; padding: 0 clamp(24px, 5vw, 82px); transition: background .35s, border-color .35s; border-bottom: 1px solid transparent; }
 .site-header.scrolled { background: rgba(10, 10, 12, .88); backdrop-filter: blur(18px); border-color: var(--line); }
-.nav { display: flex; gap: 36px; margin: 0 auto; }
-.nav a { color: #c8c8c8; font-size: .83rem; transition: color .25s; }
+.nav { display: flex; gap: clamp(18px, 2vw, 36px); margin: 0 auto; }
+.nav a { color: #c8c8c8; font-size: .83rem; white-space: nowrap; transition: color .25s; }
 .nav a:hover { color: #fff; }
 .header-cta { font-size: .78rem; font-weight: 600; display: flex; gap: 10px; align-items: center; }
 .header-cta svg { transition: transform .25s; }
@@ -40,6 +40,8 @@ h1, h2, h3 { font-family: var(--display); margin: 0; }
 h1 { font-size: clamp(3.3rem, 6.7vw, 7.2rem); font-weight: 700; line-height: .93; letter-spacing: -.075em; }
 h1 em { font-family: Georgia, serif; font-weight: 400; letter-spacing: -.06em; }
 .hero-intro { max-width: 580px; margin: 34px 0 0; color: #b8b8bb; line-height: 1.75; font-size: clamp(.9rem, 1.2vw, 1.02rem); }
+.hero-intro p { margin: 0; }
+.hero-intro p + p { margin-top: 12px; color: #929297; font-size: .88em; }
 .hero-intro strong { color: #fff; font-weight: 500; }
 .hero-actions { margin-top: 34px; display: flex; align-items: center; gap: 32px; }
 .button { display: inline-flex; align-items: center; gap: 20px; padding: 15px 20px; text-transform: uppercase; font-size: .69rem; letter-spacing: .11em; font-weight: 700; }
@@ -281,13 +283,17 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .contact .eyebrow { color: #fff; }
 .contact .eyebrow span { background: #fff; }
 .contact-row { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+.contact-copy { max-width: 1180px; }
 .contact h2 { font-size: clamp(3rem, 7.5vw, 8rem); }
 .contact h2 em { color: #190807; }
-.contact-circle { min-width: 120px; width: clamp(120px, 14vw, 185px); aspect-ratio: 1; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; display: grid; place-items: center; transition: background .3s, color .3s, transform .3s; }
+.contact-message { max-width: 690px; margin: 30px 0 0; font-size: clamp(.92rem, 1.3vw, 1.12rem); line-height: 1.7; }
+.contact-circle { min-width: 120px; width: clamp(120px, 14vw, 185px); aspect-ratio: 1; border: 1px solid rgba(255,255,255,.55); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; transition: background .3s, color .3s, transform .3s; }
 .contact-circle:hover { background: white; color: var(--orange); transform: rotate(-15deg); }
+.contact-circle span { font: 700 .62rem var(--display); letter-spacing: .12em; text-transform: uppercase; }
 .contact-circle svg { width: 34%; }
-.contact-details { margin-top: 90px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.35); display: flex; align-items: center; gap: 45px; font-size: .75rem; }
-.contact-details a { display: flex; align-items: center; gap: 9px; }
+.contact-details { margin-top: 90px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.35); display: flex; flex-wrap: wrap; align-items: center; gap: 24px 38px; font-size: .75rem; }
+.contact-details a { display: flex; align-items: center; gap: 9px; white-space: nowrap; }
+.contact-details a:hover { color: #260b08; }
 .contact-details span { margin-left: auto; opacity: .75; }
 footer { min-height: 120px; display: flex; align-items: center; justify-content: space-between; gap: 25px; padding: 25px clamp(24px, 7vw, 120px); color: #6f6f74; font-size: .66rem; }
 footer .logo { color: #fff; }
