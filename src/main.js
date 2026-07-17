@@ -12,6 +12,37 @@ const icon = (name) => {
   return `<svg viewBox="0 0 24 24" aria-hidden="true">${paths[name]}</svg>`
 }
 
+const verticalGraphics = [
+  { title: 'Graduation Campaign', file: '1.png' },
+  { title: "Mother's Day Collection", file: '1st mothers day.png' },
+  { title: "Mother's Day Promotion", file: '2.png' },
+  { title: "Teacher's Day Campaign", file: '6.png' },
+  { title: "Valentine's Market Poster", file: 'feb 14.jpg' },
+  { title: 'Product Infographic', file: 'JAVIER_INFOGRAPHIC.png' },
+  { title: 'Pink Power Event', file: 'margo collection.png' },
+  { title: 'Teacher Appreciation', file: "Minimalist Teacher's Day Instagram Post.png" }
+].map(item => ({ ...item, src: encodeURI(`/assets/graphics posters/vertical/${item.file}`) }))
+
+const horizontalGraphics = [
+  { title: 'Social Campaign 01', file: 'FACEBOOK POST.png' },
+  { title: 'Social Campaign 02', file: 'FACEBOOK POST 2.png' },
+  { title: "Valentine's Cover", file: 'landscape valentine cover.png' },
+  { title: "We're Back Announcement", file: 'Were Back Poster 1.png' }
+].map(item => ({ ...item, src: encodeURI(`/assets/graphics posters/horizontal/${item.file}`) }))
+
+const uniformGraphics = [
+  { title: 'OJT Uniform Concept A', file: 'COT_OJT UNIFORM type a.png' },
+  { title: 'OJT Uniform Concept B', file: 'COT_OJT UNIFORM type b.png' }
+].map(item => ({ ...item, src: encodeURI(`/assets/graphics posters/horizontal/${item.file}`) }))
+
+const allGraphics = [...verticalGraphics, ...horizontalGraphics, ...uniformGraphics]
+const graphicCard = (item, index, format) => `
+  <button class="design-card design-card-${format}" type="button" data-graphic-index="${index}" style="--card-order:${index}" aria-label="View ${item.title}">
+    <span class="design-image-wrap"><img src="${item.src}" alt="${item.title}" loading="lazy" /></span>
+    <span class="design-card-meta"><strong>${item.title}</strong></span>
+  </button>
+`
+
 document.querySelector('#app').innerHTML = `
   <header class="site-header" id="top">
     <a class="logo" href="#home" aria-label="Ian Javier home">IJ<span>.</span></a>
@@ -159,7 +190,39 @@ document.querySelector('#app').innerHTML = `
           </article>
         </div>
       </section>
+
+      <section class="design-showcase reveal" aria-labelledby="poster-title">
+        <div class="reels-heading design-heading">
+          <h3 id="poster-title">Posters <em>&amp;</em> Social Designs</h3>
+        </div>
+
+        <div class="design-collection vertical-collection">
+          <div class="vertical-design-grid">
+            ${verticalGraphics.map((item, index) => graphicCard(item, index, 'vertical')).join('')}
+          </div>
+        </div>
+
+        <div class="design-collection horizontal-collection">
+          <div class="horizontal-design-grid">
+            ${horizontalGraphics.map((item, index) => graphicCard(item, verticalGraphics.length + index, 'horizontal')).join('')}
+          </div>
+        </div>
+
+        <div class="design-collection uniform-collection">
+          <div class="uniform-heading"><h4>Uniform Concepts</h4></div>
+          <div class="uniform-design-grid">
+            ${uniformGraphics.map((item, index) => graphicCard(item, verticalGraphics.length + horizontalGraphics.length + index, 'uniform')).join('')}
+          </div>
+        </div>
+      </section>
     </section>
+
+    <dialog class="design-lightbox" aria-label="Graphic design preview">
+      <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous design">&lsaquo;</button>
+      <figure><img alt="" /><figcaption></figcaption></figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next design">&rsaquo;</button>
+    </dialog>
 
     <section class="contact section" id="contact">
       <p class="eyebrow reveal"><span></span> Have a project in mind?</p>
@@ -214,6 +277,46 @@ document.querySelectorAll('[data-video-player]').forEach(player => {
     playButton.classList.add('is-playing')
   })
   video.addEventListener('pause', () => playButton.classList.remove('is-playing'))
+})
+
+const designLightbox = document.querySelector('.design-lightbox')
+const lightboxImage = designLightbox.querySelector('img')
+const lightboxCaption = designLightbox.querySelector('figcaption')
+let activeGraphic = 0
+
+const showLightboxGraphic = index => {
+  activeGraphic = (index + allGraphics.length) % allGraphics.length
+  const graphic = allGraphics[activeGraphic]
+  lightboxImage.src = graphic.src
+  lightboxImage.alt = graphic.title
+  lightboxCaption.textContent = `${String(activeGraphic + 1).padStart(2, '0')} / ${String(allGraphics.length).padStart(2, '0')} — ${graphic.title}`
+}
+
+const openDesignLightbox = index => {
+  showLightboxGraphic(index)
+  if (!designLightbox.open) designLightbox.showModal()
+  document.body.classList.add('lightbox-open')
+}
+
+const closeDesignLightbox = () => {
+  designLightbox.close()
+  document.body.classList.remove('lightbox-open')
+}
+
+document.querySelectorAll('[data-graphic-index]').forEach(card => {
+  card.addEventListener('click', () => openDesignLightbox(Number(card.dataset.graphicIndex)))
+})
+designLightbox.querySelector('.lightbox-close').addEventListener('click', closeDesignLightbox)
+designLightbox.querySelector('.lightbox-prev').addEventListener('click', () => showLightboxGraphic(activeGraphic - 1))
+designLightbox.querySelector('.lightbox-next').addEventListener('click', () => showLightboxGraphic(activeGraphic + 1))
+designLightbox.addEventListener('click', event => {
+  if (event.target === designLightbox) closeDesignLightbox()
+})
+designLightbox.addEventListener('cancel', () => document.body.classList.remove('lightbox-open'))
+document.addEventListener('keydown', event => {
+  if (!designLightbox.open) return
+  if (event.key === 'ArrowLeft') showLightboxGraphic(activeGraphic - 1)
+  if (event.key === 'ArrowRight') showLightboxGraphic(activeGraphic + 1)
 })
 
 const observer = new IntersectionObserver(entries => {
