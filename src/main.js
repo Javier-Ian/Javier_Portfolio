@@ -24,8 +24,8 @@ const verticalGraphics = [
 ].map(item => ({ ...item, src: encodeURI(`/assets/graphics posters/vertical/${item.file}`) }))
 
 const horizontalGraphics = [
-  { title: 'Social Campaign 01', file: 'FACEBOOK POST.png' },
-  { title: 'Social Campaign 02', file: 'FACEBOOK POST 2.png' },
+  { title: 'JMIGS Fruit Wine Collection', file: 'FACEBOOK POST.png' },
+  { title: 'JMIGS Cheers Anytime Poster', file: 'FACEBOOK POST 2.png' },
   { title: "Valentine's Cover", file: 'landscape valentine cover.png' },
   { title: "We're Back Announcement", file: 'Were Back Poster 1.png' }
 ].map(item => ({ ...item, src: encodeURI(`/assets/graphics posters/horizontal/${item.file}`) }))
@@ -160,7 +160,7 @@ document.querySelector('#app').innerHTML = `
 
       <section class="longform-showcase reveal" aria-labelledby="longform-title">
         <div class="reels-heading longform-heading">
-          <h3 id="longform-title"><em>LONG FORM</em> Videos</h3>
+          <h3 id="longform-title"><em>LONG FORM</em> YouTube Videos</h3>
         </div>
 
         <div class="longform-grid">
@@ -188,6 +188,60 @@ document.querySelector('#app').innerHTML = `
               <button class="play-button" aria-label="Play long-form video 4">${icon('play')}</button>
             </div>
           </article>
+        </div>
+
+      </section>
+
+      <section class="campus-showcase reveal" aria-labelledby="campus-title">
+        <div class="reels-heading campus-heading">
+          <h3 id="campus-title"><em>CAMPUS &amp; EVENT</em> Projects</h3>
+        </div>
+
+        <div class="campus-video-group">
+          <div class="video-subgroup-heading"><span></span><h4>Vertical Highlights</h4><span></span></div>
+          <div class="vertical-video-grid">
+            <article class="portfolio-video-card">
+              <div class="vertical-video-frame" data-video-player>
+                <video preload="metadata" playsinline controls><source src="/assets/videos/kaamulan-2025.mp4" type="video/mp4" /></video>
+                <button class="play-button" aria-label="Play Kaamulan 2025 video">${icon('play')}</button>
+              </div>
+              <h5>Kaamulan 2025: Where Heritage Dances, and the Heart of Bukidnon Beats</h5>
+            </article>
+            <article class="portfolio-video-card">
+              <div class="vertical-video-frame" data-video-player>
+                <video preload="metadata" playsinline controls><source src="/assets/videos/mr-ms-buksu-teaser.mp4" type="video/mp4" /></video>
+                <button class="play-button" aria-label="Play Mr. and Ms. BUKSU teaser">${icon('play')}</button>
+              </div>
+              <h5>Mr. &amp; Ms. BUKSU Teaser</h5>
+            </article>
+          </div>
+        </div>
+
+        <div class="video-subgroup campus-feature-group">
+          <div class="video-subgroup-heading"><span></span><h4>Feature &amp; Promotional Videos</h4><span></span></div>
+          <div class="campus-landscape-grid">
+            <article class="portfolio-video-card">
+              <div class="longform-frame" data-video-player>
+                <video preload="metadata" playsinline controls><source src="/assets/videos/buksu-aacup-area-2.mp4" type="video/mp4" /></video>
+                <button class="play-button" aria-label="Play BUKSU AACUP Area 2 promotional video">${icon('play')}</button>
+              </div>
+              <h5>BUKSU AACUP Area 2 Promotional Video</h5>
+            </article>
+            <article class="portfolio-video-card">
+              <div class="longform-frame" data-video-player>
+                <video preload="metadata" playsinline controls><source src="/assets/videos/mr-ms-buksu-interview-talent.mp4" type="video/mp4" /></video>
+                <button class="play-button" aria-label="Play Mr. and Ms. BUKSU interview and talent video">${icon('play')}</button>
+              </div>
+              <h5>Mr. &amp; Ms. BUKSU: Closed-Door Interview &amp; Talent</h5>
+            </article>
+            <article class="portfolio-video-card">
+              <div class="longform-frame" data-video-player>
+                <video preload="metadata" playsinline controls><source src="/assets/videos/bb-dalwangan-bts.mp4" type="video/mp4" /></video>
+                <button class="play-button" aria-label="Play Binibining Dalwagan 2026 behind-the-scenes video">${icon('play')}</button>
+              </div>
+              <h5>Binibining Dalwagan 2026 &mdash; Behind the Scenes</h5>
+            </article>
+          </div>
         </div>
       </section>
 
