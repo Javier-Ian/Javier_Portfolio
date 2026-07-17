@@ -54,9 +54,9 @@ document.querySelector('#app').innerHTML = `
     <nav class="nav" aria-label="Main navigation">
       <a href="#work">Explore My Work</a>
       <a href="#about">Get to know me</a>
-      <a href="/assets/Ian-Javier-Resume.pdf" download>Download Resume</a>
+      <a href="/resume/ian-javier-resume.pdf" download>Download Resume</a>
     </nav>
-    <a class="header-cta" href="/assets/Ian-Javier-Resume.pdf" download>Download Resume ${icon('download')}</a>
+    <a class="header-cta" href="#contact">Let's work together ${icon('arrow')}</a>
   </header>
 
   <main>
@@ -298,7 +298,7 @@ document.querySelector('#app').innerHTML = `
         <a href="mailto:ianjavier139@gmail.com">${icon('mail')} ianjavier139@gmail.com</a>
         <a href="https://linkedin.com/in/Javier-Ian" target="_blank" rel="noreferrer">${icon('linkedin')} LinkedIn</a>
         <a href="https://github.com/Javier-Ian" target="_blank" rel="noreferrer">${icon('github')} GitHub</a>
-        <a href="tel:+639675866309309">${icon('phone')} +63 967 586 6309309</a>
+        <a href="tel:+639675866309">${icon('phone')} +63 967 586 6309</a>
         <span>Based in the Philippines &middot; Available worldwide</span>
       </div>
     </section>
@@ -306,7 +306,10 @@ document.querySelector('#app').innerHTML = `
 
   <footer>
     <a class="logo" href="#home">IJ<span>.</span></a>
-    <p>© <span id="year"></span> Ian Dave L. Javier. Crafted with intention.</p>
+    <div class="footer-credit">
+      <p>Designed &amp; developed by Ian Dave L. Javier.</p>
+      <p>&copy; <span id="year"></span> All Rights Reserved.</p>
+    </div>
     <a href="#top" class="back-top">Back to top ${icon('up')}</a>
   </footer>
 `
