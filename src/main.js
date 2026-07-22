@@ -313,7 +313,7 @@ document.querySelector('#app').innerHTML = `
       <p>Designed &amp; developed by Ian Dave L. Javier.</p>
       <p>&copy; <span id="year"></span> All Rights Reserved.</p>
     </div>
-    <a href="#top" class="back-top">Back to top ${icon('up')}</a>
+    <a href="#home" class="back-top">Back to top ${icon('up')}</a>
   </footer>
 `
 
@@ -328,6 +328,12 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   nav.classList.remove('is-open')
   menuButton.setAttribute('aria-expanded', 'false')
 }))
+
+document.querySelector('.back-top').addEventListener('click', event => {
+  event.preventDefault()
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' })
+})
 
 const portfolioVideos = [...document.querySelectorAll('[data-video-player] video')]
 const youtubeIframes = [...document.querySelectorAll('[data-youtube-player] iframe')]
