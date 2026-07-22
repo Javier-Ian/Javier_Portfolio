@@ -47,6 +47,18 @@ const graphicCard = (item, index, format) => `
   </button>
 `
 
+const youtubeEmbed = (videoId, title) => `
+  <iframe
+    class="youtube-player"
+    src="https://www.youtube-nocookie.com/embed/${videoId}?enablejsapi=1&amp;playsinline=1&amp;rel=0"
+    title="${title}"
+    loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen
+  ></iframe>
+`
+
 document.querySelector('#app').innerHTML = `
   <header class="site-header" id="top">
     <a class="logo" href="#home" aria-label="Ian Javier home">IJ<span>.</span></a>
@@ -172,27 +184,23 @@ document.querySelector('#app').innerHTML = `
 
         <div class="longform-grid">
           <article class="longform-card">
-            <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline controls><source src="/assets/videos/BREAKING%20Ford%20SHUTS%20DOWN%20U.S.%20Production%20%E2%80%94%20Trump%20.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play long-form video 1">${icon('play')}</button>
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('KCUKbbqLNms', 'BREAKING: Ford shuts down U.S. production')}
             </div>
           </article>
           <article class="longform-card">
-            <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline controls><source src="/assets/videos/revise%20vid.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play long-form video 2">${icon('play')}</button>
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('emfedfJmKy0', 'Long-form video project')}
             </div>
           </article>
           <article class="longform-card">
-            <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline controls><source src="/assets/videos/St.gregory%20University.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play long-form video 3">${icon('play')}</button>
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('Az4u4HVv4C0', 'St. Gregory University video')}
             </div>
           </article>
           <article class="longform-card">
-            <div class="longform-frame" data-video-player>
-              <video preload="metadata" playsinline controls><source src="/assets/videos/Trump%E2%80%99s%20Tariffs%20SPARK%20Uprising.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play long-form video 4">${icon('play')}</button>
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('wEXKFrFHM9A', 'Trump tariffs spark uprising')}
             </div>
           </article>
         </div>
@@ -208,16 +216,14 @@ document.querySelector('#app').innerHTML = `
           <div class="video-subgroup-heading"><span></span><h4>Vertical Highlights</h4><span></span></div>
           <div class="vertical-video-grid">
             <article class="portfolio-video-card">
-              <div class="vertical-video-frame" data-video-player>
-                <video preload="metadata" playsinline controls><source src="/assets/videos/kaamulan-2025.mp4" type="video/mp4" /></video>
-                <button class="play-button" aria-label="Play Kaamulan 2025 video">${icon('play')}</button>
+              <div class="vertical-video-frame" data-youtube-player>
+                ${youtubeEmbed('NbRpISM3LAQ', 'Kaamulan 2025: Where Heritage Dances, and the Heart of Bukidnon Beats')}
               </div>
               <h5>Kaamulan 2025: Where Heritage Dances, and the Heart of Bukidnon Beats</h5>
             </article>
             <article class="portfolio-video-card">
-              <div class="vertical-video-frame" data-video-player>
-                <video preload="metadata" playsinline controls><source src="/assets/videos/mr-ms-buksu-teaser.mp4" type="video/mp4" /></video>
-                <button class="play-button" aria-label="Play Mr. and Ms. BUKSU teaser">${icon('play')}</button>
+              <div class="vertical-video-frame" data-youtube-player>
+                ${youtubeEmbed('34OgvdV7DHs', 'Mr. and Ms. BUKSU teaser')}
               </div>
               <h5>Mr. &amp; Ms. BUKSU Teaser</h5>
             </article>
@@ -228,23 +234,20 @@ document.querySelector('#app').innerHTML = `
           <div class="video-subgroup-heading"><span></span><h4>Feature &amp; Promotional Videos</h4><span></span></div>
           <div class="campus-landscape-grid">
             <article class="portfolio-video-card">
-              <div class="longform-frame" data-video-player>
-                <video preload="metadata" playsinline controls><source src="/assets/videos/buksu-aacup-area-2.mp4" type="video/mp4" /></video>
-                <button class="play-button" aria-label="Play BUKSU AACUP Area 2 promotional video">${icon('play')}</button>
+              <div class="longform-frame" data-youtube-player>
+                ${youtubeEmbed('Mq4OgD8SYBI', 'BUKSU AACUP Area 2 promotional video')}
               </div>
               <h5>BUKSU AACUP Area 2 Promotional Video</h5>
             </article>
             <article class="portfolio-video-card">
-              <div class="longform-frame" data-video-player>
-                <video preload="metadata" playsinline controls><source src="/assets/videos/mr-ms-buksu-interview-talent.mp4" type="video/mp4" /></video>
-                <button class="play-button" aria-label="Play Mr. and Ms. BUKSU interview and talent video">${icon('play')}</button>
+              <div class="longform-frame" data-youtube-player>
+                ${youtubeEmbed('xy6mfDECYSY', 'Mr. and Ms. BUKSU closed-door interview and talent')}
               </div>
               <h5>Mr. &amp; Ms. BUKSU: Closed-Door Interview &amp; Talent</h5>
             </article>
             <article class="portfolio-video-card">
-              <div class="longform-frame" data-video-player>
-                <video preload="metadata" playsinline controls><source src="/assets/videos/bb-dalwangan-bts.mp4" type="video/mp4" /></video>
-                <button class="play-button" aria-label="Play Binibining Dalwagan 2026 behind-the-scenes video">${icon('play')}</button>
+              <div class="longform-frame" data-youtube-player>
+                ${youtubeEmbed('Fd_yUqBqHZs', 'Binibining Dalwagan 2026 behind the scenes')}
               </div>
               <h5>Binibining Dalwagan 2026 &mdash; Behind the Scenes</h5>
             </article>
@@ -327,6 +330,8 @@ nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
 }))
 
 const portfolioVideos = [...document.querySelectorAll('[data-video-player] video')]
+const youtubeIframes = [...document.querySelectorAll('[data-youtube-player] iframe')]
+const youtubePlayers = []
 
 document.querySelectorAll('[data-video-player]').forEach(player => {
   const video = player.querySelector('video')
@@ -340,6 +345,7 @@ document.querySelectorAll('[data-video-player]').forEach(player => {
   playButton.addEventListener('click', toggleVideo)
   if (!video.controls) video.addEventListener('click', toggleVideo)
   video.addEventListener('play', () => {
+    youtubePlayers.forEach(player => player.pauseVideo())
     portfolioVideos.forEach(otherVideo => {
       if (otherVideo !== video && !otherVideo.paused) otherVideo.pause()
     })
@@ -347,6 +353,29 @@ document.querySelectorAll('[data-video-player]').forEach(player => {
   })
   video.addEventListener('pause', () => playButton.classList.remove('is-playing'))
 })
+
+if (youtubeIframes.length) {
+  window.onYouTubeIframeAPIReady = () => {
+    youtubeIframes.forEach(iframe => {
+      const player = new window.YT.Player(iframe, {
+        events: {
+          onStateChange: event => {
+            if (event.data !== window.YT.PlayerState.PLAYING) return
+            portfolioVideos.forEach(video => video.pause())
+            youtubePlayers.forEach(otherPlayer => {
+              if (otherPlayer !== event.target) otherPlayer.pauseVideo()
+            })
+          }
+        }
+      })
+      youtubePlayers.push(player)
+    })
+  }
+
+  const youtubeApi = document.createElement('script')
+  youtubeApi.src = 'https://www.youtube.com/iframe_api'
+  document.head.append(youtubeApi)
+}
 
 const designLightbox = document.querySelector('.design-lightbox')
 const lightboxImage = designLightbox.querySelector('img')
