@@ -151,27 +151,13 @@ document.querySelector('#app').innerHTML = `
 
         <div class="reels-grid">
           <article class="reel-card">
-            <div class="reel-frame" data-video-player>
-              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-01.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play short-form reel 1">${icon('play')}</button>
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('UQRxFtTwuw8', 'Short-form reel 1')}
             </div>
           </article>
           <article class="reel-card">
-            <div class="reel-frame" data-video-player>
-              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-02.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play short-form reel 2">${icon('play')}</button>
-            </div>
-          </article>
-          <article class="reel-card">
-            <div class="reel-frame" data-video-player>
-              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-03.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play short-form reel 3">${icon('play')}</button>
-            </div>
-          </article>
-          <article class="reel-card">
-            <div class="reel-frame" data-video-player>
-              <video poster="/assets/reel-placeholder.svg" preload="metadata" playsinline><source src="/assets/reels/reel-04.mp4" type="video/mp4" /></video>
-              <button class="play-button" aria-label="Play short-form reel 4">${icon('play')}</button>
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('JjqBXpOvc8M', 'Short-form reel 2')}
             </div>
           </article>
         </div>
