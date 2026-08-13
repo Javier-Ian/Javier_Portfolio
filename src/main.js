@@ -160,6 +160,11 @@ document.querySelector('#app').innerHTML = `
               ${youtubeEmbed('JjqBXpOvc8M', 'Short-form reel 2')}
             </div>
           </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('ibF4welJJYA', 'Short-form reel — added')}
+            </div>
+          </article>
         </div>
       </section>
 
@@ -187,6 +192,11 @@ document.querySelector('#app').innerHTML = `
           <article class="longform-card">
             <div class="longform-frame" data-youtube-player>
               ${youtubeEmbed('wEXKFrFHM9A', 'Trump tariffs spark uprising')}
+            </div>
+          </article>
+          <article class="longform-card">
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('XPVtT7-MdOU', 'Long-form video — added')}
             </div>
           </article>
         </div>
