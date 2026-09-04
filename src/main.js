@@ -162,7 +162,56 @@ document.querySelector('#app').innerHTML = `
           </article>
           <article class="reel-card">
             <div class="reel-frame" data-youtube-player>
-              ${youtubeEmbed('ibF4welJJYA', 'Short-form reel — added')}
+              ${youtubeEmbed('jSTeTFGsBl0', 'Short-form reel — added')}
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ads-showcase reveal" aria-labelledby="ads-title">
+        <div class="reels-heading">
+          <h3 id="ads-title"><em>UGC/VSL</em> &amp; E commerce Ads</h3>
+        </div>
+
+        <div class="ads-grid">
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('ibF4welJJYA', 'UGC and e-commerce ad 1')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('M14iiikrqtw', 'UGC and e-commerce ad 2')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('DRrIJyr9nMo', 'UGC and e-commerce ad 3')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('l7laJsZBvTY', 'UGC and e-commerce ad 4')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('Xk3byXADQuc', 'UGC and e-commerce ad 5')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('vXU3pSk9PkY', 'UGC and e-commerce ad 6')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('pQhQ50zVoLY', 'UGC and e-commerce ad 7')}
+            </div>
+          </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('gCIeCUHAvt0', 'UGC and e-commerce ad 8')}
             </div>
           </article>
         </div>
