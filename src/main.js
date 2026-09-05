@@ -214,6 +214,11 @@ document.querySelector('#app').innerHTML = `
               ${youtubeEmbed('gCIeCUHAvt0', 'UGC and e-commerce ad 8')}
             </div>
           </article>
+          <article class="reel-card">
+            <div class="reel-frame" data-youtube-player>
+              ${youtubeEmbed('liJMUCnE2D8', 'UGC and e-commerce ad 9')}
+            </div>
+          </article>
         </div>
       </section>
 

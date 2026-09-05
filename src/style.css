@@ -102,7 +102,7 @@ h2 em { font-family: Georgia, serif; font-weight: 400; }
 .reel-caption h4 { margin: 0; font: 600 .85rem var(--display); }
 .reel-caption span { color: #8a867e; font-size: .5rem; letter-spacing: .14em; }
 .ads-showcase { margin-top: 105px; margin-bottom: 110px; }
-.ads-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(16px, 1.8vw, 26px); max-width: 1120px; margin: 0 auto; }
+.ads-grid { display: grid; grid-template-columns: repeat(3, minmax(260px, 320px)); justify-content: center; gap: clamp(12px, 1.5vw, 24px); margin: 0 auto; }
 .ads-grid .reel-frame { border-radius: 16px; }
 .longform-showcase { margin-top: 105px; }
 .longform-heading { margin-bottom: 32px; }
