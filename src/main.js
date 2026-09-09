@@ -240,7 +240,12 @@ document.querySelector('#app').innerHTML = `
           </article>
           <article class="longform-card">
             <div class="longform-frame" data-youtube-player>
-              ${youtubeEmbed('Az4u4HVv4C0', 'St. Gregory University video')}
+              ${youtubeEmbed('TsQm_vuAFJI', 'Long-form video — added 1')}
+            </div>
+          </article>
+          <article class="longform-card">
+            <div class="longform-frame" data-youtube-player>
+              ${youtubeEmbed('1ZaoxTyzFOg', 'Long-form video — added 2')}
             </div>
           </article>
           <article class="longform-card">
